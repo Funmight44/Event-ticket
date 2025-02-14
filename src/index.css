@@ -303,8 +303,8 @@ nav p{
 
 @media(max-width:750px){
   .container{
-    width:375px;
-    height:1271px ;
+    width: 335px;
+    height: 1127px;
   }
 
   .selectionDetails h1{
@@ -312,13 +312,23 @@ nav p{
   }
 
   .ticketSelection{
-    width: 350px;
+    width: 330px;
     margin: 10px auto;
   }
 
   .container .ticketContainer{
-    width: 350px;
+    width: 320px;
     height: 1070px;
+  }
+
+  .Lines .progressBar{
+    width: 210px;
+    margin: auto  ;
+  }
+
+  .ticketContainer .progressBar2{
+    width: 300px;
+    margin: 20px auto;
   }
 
   .ticketContainer .eventDetails{
@@ -373,7 +383,7 @@ nav p{
   }
 
   .buttons{
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
   }
 
