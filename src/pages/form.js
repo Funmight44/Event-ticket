@@ -126,7 +126,7 @@ const TicketForm = () => {
                                     onDrop={handleDrop}
                                     onClick={() => document.getElementById('fileInput').click()}>
                                 
-                                   <input type="file" id='fileInput' accept='image'required onChange={uploadImage} className='imgInput' style={{display:'none'}}/>
+                                   <input type="file" id='fileInput' accept='image' onChange={uploadImage} className='imgInput' style={{display:'none'}}/>
                                    {!imgPreview && <div className='imgInput'>
                                         <span className='download'><i class="bi bi-cloud-download"></i></span> 
                                         <p>{dragging ? "Drop the file here..." : "Drag & drop or click to upload"}</p> 

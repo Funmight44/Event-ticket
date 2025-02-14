@@ -3,7 +3,8 @@ import barCode from '../image/Bar Code.png'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import progressBar3 from '../image/Progress container.png'
+import progressBar3 from '../image/Progress container.png';
+
 
 const Ticket2 = () => {
     const [userData, setUserData] = useState({
@@ -40,8 +41,13 @@ const Ticket2 = () => {
                     <p>you can download or check your email for a copy</p>
 
                     <div className="ticketbuttons">
-                    <Link to="/ticketForm"><button className="DownT">Book another Ticket</button></Link>
+                        <Link to="/ticketForm"><button className="DownT">Book another Ticket</button></Link>
                         <button className="DT">Download Ticket</button>      
+                    </div>
+
+                    <div className="ticketbuttonsdown">
+                        <button className="DT">Download Ticket</button>    
+                        <Link to="/ticketForm"><button className="DownT">Book another Ticket</button></Link>
                     </div>
 
 
@@ -91,10 +97,10 @@ const Ticket2 = () => {
                         <img src={barCode} alt='barCode' className='barCode'/>
                     </div>
 
-                    <div className="ticketbuttonsdown">
+                    {/* <div className="ticketbuttonsdown">
                         <button className="DT">Download Ticket</button>    
                         <Link to="/ticketForm"><button className="DownT">Book another Ticket</button></Link>
-                    </div>
+                    </div> */}
             </div>
             
         </main>

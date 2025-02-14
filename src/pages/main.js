@@ -1,8 +1,34 @@
 import { Link } from "react-router-dom";
 import progressBar from '../image/Progress container (1).png';
 import progressBar2 from '../image/Progress container (2).png'
+import { useState } from "react";
 
 const Main = () => {
+    const [activeBar, setActiveBar] = useState(false)
+
+
+    const active = {
+        backgroundColor: '#197686',
+        borderRadius:'10px',
+        padding: '8px',
+        border:' 1px solid #197686',
+        cursor: 'pointer',
+        width: '220px'
+    }
+
+    const inActive = {
+        backgroundColor: 'transparent',
+        borderRadius:'10px',
+        padding: '8px',
+        border:' 1px solid #197686',
+        cursor: 'pointer',
+        width: '220px',
+    }
+
+    /* className={({isActive}) => isActive ? active : inActive} */
+
+
+
     return ( 
         <main>
             <div className="container">
@@ -26,7 +52,7 @@ const Main = () => {
                     <img src={progressBar2} alt="progressBar2" className="progressBar2"/>
                     <span className="ticketTypes">Select Ticket Type:</span>
                     <div className="ticketTypeContainer">
-                        <div className="regAccess"> 
+                        <div className="regAccess" style={activeBar === 'free' ? active : inActive} onClick={() => setActiveBar('free')}> 
                             <div>
                                 <h2>REGULAR ACCESS</h2>
                                 <span className="free">Free</span>
@@ -34,7 +60,7 @@ const Main = () => {
                             <p>20 left!</p>
                         </div>
 
-                        <div className="VIPAccess">
+                        <div className="VIPAccess" style={activeBar === 'vip' ? active : inActive} onClick={() => setActiveBar('vip')}>
                             <div>
                                 <h2>VIP ACCESS</h2>
                                 <span className="VPrice">$50</span>
@@ -43,7 +69,7 @@ const Main = () => {
                         </div>
 
                         
-                        <div className="VVIPAccess">
+                        <div className="VVIPAccess" style={activeBar === 'vvip' ? active : inActive} onClick={() => setActiveBar('vvip')}>
                             <div>
                                 <h2>VVIP ACCESS</h2>
                                 <span className="VPrice">$150</span>

@@ -33,7 +33,7 @@ body{
 main{
   width: 90%;
   margin: auto;
-  /* background-color:#222; */
+/* background-color:#222; */
 }
 
 header{
@@ -75,7 +75,7 @@ nav p{
 }
 
 
-@media(max-width:650px){
+@media(max-width:750px){
   header{
     width: 320px;
     height: 68px;
@@ -154,7 +154,7 @@ nav p{
 
 
 .eventDetails{
-  width: 556px;
+  width: 558px;
   height: 200px;
   line-height: 2;
   /* background:linear-gradient(#07373F 134%,  #0A0C11 150%); */
@@ -165,20 +165,29 @@ nav p{
   padding: 10px;
   text-align: center;
   color: #fafafa;
+  line-height: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.eventDetails .event{
-  width: 340px;
+.eventDetails h2
+
+.ticketContainer .eventDetails .event{
+  width: 330px;
   height: 48px;
   text-align: center;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   margin: 5px auto;
 }
 
-.eventDetails .location{
-  font-size: 16px;
+.ticketContainer .eventDetails .location{
+  font-size: 14px;
   font-weight: 400;
+  margin-top: 20px;
+  text-align: center;
 }
 
 
@@ -201,7 +210,6 @@ nav p{
   height: 196px;
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
   background-color:  #052228;
   padding: 10px;
   border-radius: 24px;
@@ -293,7 +301,7 @@ nav p{
   color: #F5F5F5;
 }
 
-@media(max-width:650px){
+@media(max-width:750px){
   .container{
     width:375px;
     height:1271px ;
@@ -310,7 +318,7 @@ nav p{
 
   .container .ticketContainer{
     width: 350px;
-    height: 950px;
+    height: 1070px;
   }
 
   .ticketContainer .eventDetails{
@@ -328,7 +336,11 @@ nav p{
     margin: 10px auto;
     text-align: center  ;
   }
-
+  .ticketTypeContainer .regAccess div, .VIPAccess div, .VVIPAccess div{
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
   
 
   .ticketHr{
@@ -338,9 +350,13 @@ nav p{
 
   .ticketContainer .ticketTypeContainer{
     width: 287px;
-    height: 300px;
+    height: 420px;
     flex-direction: column;
     align-items: center;
+  }
+
+  .ticketContainer .ticketTypeContainer h2{
+    font-size: 15px;
   }
 
   .ticketContainer .ticketInput{
@@ -429,7 +445,7 @@ nav p{
   width: 508px;
   height: 240px;
   gap: 10px;
-  background-color: red;
+  background-color:#02191D;
   margin: auto;
   
 }
@@ -497,7 +513,7 @@ nav p{
 .formContainer .formButtons{
   display: flex;
   justify-content: space-between;
-
+  cursor: pointer;
 }
 
 .formButtons button{
@@ -508,6 +524,7 @@ nav p{
   outline: none;
   background-color: transparent;
   color: #fff;
+  cursor: pointer;
 }
 
 .formButtons .submit{
@@ -515,7 +532,7 @@ nav p{
 }
 
 
-@media(max-width: 650px){
+@media(max-width: 750px){
   .formContainer{
     width: 335px;
     height: 1127px;
@@ -845,6 +862,10 @@ nav p{
   margin: 20px auto;
 }
 
+.Lines .progressBar3{
+  width: 300px;
+}
+
 .TKContainer .ticketDetail{
   width: 282px;
   height: 200px;
@@ -912,11 +933,15 @@ nav p{
   border-color: #007bff;
 }
 
-@media(max-width: 650px){
+@media(max-width: 750px){
   .TicketContainer{
     width: 335px;
-    height: 1100px;
+    height: 900px;
     border-radius: 15px;
+  }
+  
+  .imageDiv label{
+    font-size: 14px;
   }
   
   .TicketContainer .ticketIntro{
@@ -935,15 +960,20 @@ nav p{
       background-image: url('../public/bg.png');
       background-size: contain;
       background-repeat: no-repeat;
-      
-      position: relative;
+      background-position: top;
       width: 300px;
       height: 950px;
-      z-index: 100;
+      z-index: 1;
+      overflow: hidden;
+      position: relative;
+
+      /* position: absolute;
+      top: 200px;
+      left: 18px; */
   }
 
   .TKInnerContainer .avatardiv{
-    width: 130px;
+     width: 130px;
     height: 90px;
   }
 
@@ -1008,7 +1038,11 @@ nav p{
   }
 
   .progressBar, .progressBar2, .progressBar4, .progressBar3{
-    width: 300px;
+    width: 250px;
+  }
+
+  .Lines .progressBar, .progressBar2{
+    width: 330px;
   }
 
   
@@ -1020,6 +1054,7 @@ nav p{
     align-items: center;
     flex-direction: column;
     position: relative;
+    margin: 20px auto;
   }
 
   .ticketbuttonsdown button{
@@ -1037,3 +1072,4 @@ nav p{
 }
 
 
+/* className={({isActive}) => isActive ? active : inActive} */
