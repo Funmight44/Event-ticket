@@ -324,6 +324,7 @@ nav p{
   .ticketContainer .eventDetails{
     width: 287px;
     height: 243px;
+    margin: auto;
   }
 
   .ticketContainer .eventDetails h1{
@@ -398,6 +399,9 @@ nav p{
   margin: 20px auto;
 }
 
+.FormContainer.imgContainer form {
+  margin: auto;
+}
 
 
 .imgContainer form .imageDiv{
@@ -506,14 +510,15 @@ nav p{
   padding: 10px;
   color: var(--text-color);
   color: #fafafa;
-}
+} 
 
 
 
-.formContainer .formButtons{
+.FormContainer .formButtons{
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  margin: auto;
 }
 
 .formButtons button{
@@ -936,7 +941,7 @@ nav p{
 @media(max-width: 750px){
   .TicketContainer{
     width: 335px;
-    height: 900px;
+    height: 1000px;
     border-radius: 15px;
   }
   
@@ -1072,4 +1077,3 @@ nav p{
 }
 
 
-/* className={({isActive}) => isActive ? active : inActive} */
