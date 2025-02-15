@@ -227,6 +227,15 @@ nav p{
   font-size: 16px;
 }
 
+
+.ticketContainer .homePInputField{
+  margin: auto;
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .ticketTypeContainer .regAccess div, .VIPAccess div, .VVIPAccess div{
   display: flex;
   gap: 10px;
@@ -263,14 +272,13 @@ nav p{
 }
 
 .container .ticketInput{
-  width: 556px;
+  width: 100%;
   height: 48px;
   padding: 5px;
   margin: 10px 0;
   border-radius: 5px;
   border: 1px solid  #07373F;
   background-color: transparent;
-  margin: auto;
   color: white;
   outline: none;
 }
@@ -323,7 +331,7 @@ nav p{
 
   .container .ticketContainer{
     width: 320px;
-    height: 1070px;
+    height: 1100px;
   }
 
   .Lines .progressBar{
@@ -340,6 +348,11 @@ nav p{
     width: 287px;
     height: 243px;
     margin: auto;
+  }
+
+
+  .ticketContainer .homePInputField{
+    width: 300px;
   }
 
   .ticketContainer .eventDetails h1{
@@ -376,11 +389,6 @@ nav p{
     font-size: 15px;
   }
 
-  .ticketContainer .ticketInput{
-    width: 286px;
-    margin-left: 25px;
-    margin-bottom: 10px;
-  }
   
   .ticketContainer label{
     margin-top: 30px;

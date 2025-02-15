@@ -78,8 +78,11 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <label>Number of Tickets</label>
-                    <input type="number" className="ticketInput"/>
+                    <div className="homePInputField">
+                        <label>Number of Tickets</label>
+                        <input type="number" className="ticketInput" placeholder="1"/>
+                    </div>
+                    
 
                     <div className="buttons">
                         <button className="cancel">Cancel</button>
