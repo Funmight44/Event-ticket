@@ -1,6 +1,6 @@
 import eventT from '../image/Event.Title.png'
 import barCode from '../image/Bar Code.png'
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import progressBar3 from '../image/Progress container.png';
@@ -20,6 +20,14 @@ const Ticket2 = () => {
         setUserData(storedData);
         console.log('retrive data', storedData)
     }, [])
+
+
+//function to download ticket
+
+
+
+
+
 
 
 
