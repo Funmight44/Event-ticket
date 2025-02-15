@@ -198,10 +198,14 @@ nav p{
 
 
 
+
+
+
 .ticketTypes{
   margin: 10px 0;
   color: #fff;
   margin-left: 15px;
+
 }
 
 
@@ -209,6 +213,7 @@ nav p{
   width: 556px;
   height: 196px;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   background-color:  #052228;
   padding: 10px;
@@ -304,7 +309,7 @@ nav p{
 @media(max-width:750px){
   .container{
     width: 335px;
-    height: 1127px;
+    height: 1230px;
   }
 
   .selectionDetails h1{
@@ -362,6 +367,7 @@ nav p{
   .ticketContainer .ticketTypeContainer{
     width: 287px;
     height: 420px;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
   }
@@ -680,6 +686,13 @@ nav p{
   align-items: center;
 }
 
+.ticketDetail .name, .email, .ticketType, .ticketNo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+
+
 .ticketReady .ready{
   font-size: 20px;
   flex-grow: 1;
@@ -841,7 +854,7 @@ nav p{
 .TKContainer .TKInnerContainer{
   width: 300px;
   background-color: #07373f;
-  
+  border: 1px solid #197686;
   height: 580px;
   position: absolute;
   top: 30px;
