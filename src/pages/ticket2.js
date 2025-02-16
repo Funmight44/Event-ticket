@@ -1,6 +1,6 @@
 import eventT from '../image/Event.Title.png'
 import barCode from '../image/Bar Code.png'
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import progressBar3 from '../image/Progress container.png';
@@ -99,7 +99,7 @@ const Ticket2 = () => {
                                 <p>Special request?</p>
                                 <span>{userData.textarea}</span>
                             </div>
-                                </div>
+                            </div>
 
                         </div>
                         <img src={barCode} alt='barCode' className='barCode'/>

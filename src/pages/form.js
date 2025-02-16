@@ -95,7 +95,6 @@ const TicketForm = () => {
         navigate('/ticket');
         
         event.target.reset();
-        console.log("Submitting Form Data:", formData);
     }
 
 
